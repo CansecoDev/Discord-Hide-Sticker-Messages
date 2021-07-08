@@ -1,4 +1,4 @@
-# Hide Blocked Messages
+# Hide Sticker Messages
 
 This still works as of Thursday, 8 July 2021<br>
 This repository is for those looking to hide the messages with stickers from discord. If reading this far into the future, please note that this may not work, so don't complain to me if it stops working.<br>
