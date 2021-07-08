@@ -1,20 +1,20 @@
 // ==UserScript==
-// @name        Discord Hide Blocked Messages
-// @namespace   https://github.com/Multarix/Discord-Hide-Blocked-Messages
+// @name        Discord Hide Sticker Messages
+// @namespace   https://github.com/CansecoDev/Discord-Hide-Sticker-Messages
 // @match       https://discord.com/*
-// @downloadURL https://raw.githubusercontent.com/Multarix/Discord-Hide-Blocked-Messages/master/script.user.js
-// @homepageURL https://github.com/Multarix/Discord-Hide-Blocked-Messages
-// @supportURL  https://github.com/Multarix/Discord-Hide-Blocked-Messages/issues
+// @downloadURL https://raw.githubusercontent.com/CansecoDev/Discord-Hide-Sticker-Messages/master/script.user.js
+// @homepageURL https://github.com/CansecoDev/Discord-Hide-Sticker-Messages
+// @supportURL  https://github.com/CansecoDev/Discord-Hide-Sticker-Messages/issues
 // @grant       none
 // @version     1.0
-// @author      Anonymous
-// @description 10/28/2020, 1:37:40 PM
+// @author      Multrarix, CansecoDev
+// @description 07/08/2021, 2:05:42 AM
 // ==/UserScript==
 
-function hideBlocked(){
-    const blocked = document.querySelectorAll('[class^="groupStart"]'); // Find all "Blocked Messages"
-    blocked.forEach(blokMsg => {
-        if(blokMsg.style.display !== "none") blokMsg.style.display = "none"; // Hide the message if it's not already hidden.
+function hideStickerMessages(){
+    const stickerMessages = document.querySelectorAll('[class^="clickableSticker"]'); // Find all Messages with stickers on it
+    stickerMessages.forEach(stikMsg => {
+        if(stikMsg.style.display !== "none") stikMsg.style.display = "none"; // Hide the message if it's not already hidden.
     });
 };
-setInterval(hideBlocked, 500); // Repeat every half second. Recommended to keep at 500, but raise/ lower if you wish.
+setInterval(hideStickerMessages, 500); // Repeat every half second. Recommended to keep at 500, but raise/ lower if you wish.
