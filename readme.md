@@ -15,7 +15,7 @@ Copy and paste the script into the console and hit enter.<br>
 ## New Userscript (tested with ViolentMonkey)
 Install Userscript: https://github.com/CansecoDev/Discord-Hide-Sticker-Messages/raw/master/script.user.js<br>
 Some things to note:
-- The "new message" banner will still appear, as well as an empty message from the authorthat posted an sticker.
+- The "new message" banner will still appear, as well as an empty message from the author that originally posted the sticker.
 - Closing or updating discord will stop the script, requiring you to re-enable it.
 - Messages with stickers will not disappear instantly, but within half a second of them being posted.
 - This does not delete them from the channel, server or any such action. It simply hides the message client side. Other people can still see the messages.
